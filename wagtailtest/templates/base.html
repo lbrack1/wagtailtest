@@ -52,10 +52,19 @@
         {% endblock %}
     </head>
 
+
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+        <div class="colorlib-loader"></div>
+
+	        <div id="page">
+
+                {% block content %}{% endblock %}
+
+            </div>
+
+    </body>
 
         {# Global javascript #}
 	    <!-- jQuery -->
